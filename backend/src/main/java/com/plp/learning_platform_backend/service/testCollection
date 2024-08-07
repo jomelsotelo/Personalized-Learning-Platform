@@ -1,0 +1,18 @@
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class TestService {
+    @Autowired
+    private TestRepository testRepository;
+
+    public TestModel addTestSample(String name) {
+        TestModel testModel = new TestModel();
+        testModel.setName(name);
+        return testRepository.save(testModel);
+    }
+
+    public TestModel getTestSample(String id) {
+        return testRepository.findById(id).orElse(null);
+    }
+}
