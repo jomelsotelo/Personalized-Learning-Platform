@@ -1,5 +1,10 @@
+package com.plp.learning_platform_backend.service;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.plp.learning_platform_backend.repository.TestRepository;
+import com.plp.learning_platform_backend.model.TestModel;
 
 @Service
 public class TestService {
