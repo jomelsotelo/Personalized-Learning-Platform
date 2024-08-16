@@ -1,5 +1,10 @@
+package com.plp.learning_platform_backend.controller;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import com.plp.learning_platform_backend.service.TestService;
+import com.plp.learning_platform_backend.model.TestModel;
 
 @RestController
 @RequestMapping("/test")
